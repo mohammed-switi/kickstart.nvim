@@ -520,7 +520,7 @@ require('lazy').setup({
       -- Thus, Language Servers are external tools that must be installed separately from
       -- Neovim. This is where `mason` and related plugins come into play.
       --
-      -- If you're wondering about lsp vs treesitter, you can check out the wonderfully
+      -- If you're wondering about lsp vs treesitter, you can check out the wonderfullyAutocomple
       -- and elegantly composed help section, `:help lsp-vs-treesitter`
 
       --  This function gets run when an LSP attaches to a particular buffer.
@@ -842,6 +842,7 @@ require('lazy').setup({
         -- See :h blink-cmp-config-keymap for defining your own keymap
         preset = 'default',
 
+        ['<Tab>'] = { 'accept' },
         -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
         --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
       },
@@ -1027,4 +1028,3 @@ vim.keymap.set('i', 'vv', '<Esc>v', { noremap = true }) -- the convention is vv 
 
 -- Now we are doing some advanced stuff
 require 'sowaity'
-print 'sowatity arrvied MR.. '
