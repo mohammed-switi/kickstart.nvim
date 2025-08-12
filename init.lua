@@ -1021,3 +1021,7 @@ require('lazy').setup({
 -- Mohammed Sowaity Configs
 vim.keymap.set('i', 'nn', '<Esc>', { noremap = true }) -- the convention is nn is normal normal
 vim.keymap.set('i', 'vv', '<Esc>v', { noremap = true }) -- the convention is vv is visual visual
+
+-- Now we are doing some advanced stuff
+require 'sowaity'
+print 'sowatity arrvied MR.. '
