@@ -382,6 +382,9 @@ require('lazy').setup({
       { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
       { 'vuciv/golf' },
       { 'ThePrimeagen/vim-be-good' },
+      { 'theprimeagen/harpoon' },
+      { 'mbbill/undotree' },
+      { 'tpope/vim-fugitive' },
     },
     config = function()
       -- Telescope is a fuzzy finder that comes with a lot of different things that
